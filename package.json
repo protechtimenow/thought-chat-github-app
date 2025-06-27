@@ -1,0 +1,51 @@
+{
+  "name": "thought-chat-github-app",
+  "version": "1.0.0",
+  "description": "GitHub App for voice-enabled thought chat interface",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "setup-app": "node scripts/setup-github-app.js",
+    "deploy": "git push heroku main"
+  },
+  "keywords": [
+    "github-app",
+    "voice-chat",
+    "ai-assistant",
+    "developer-tools",
+    "speech-recognition",
+    "probot"
+  ],
+  "author": "protechtimenow",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/auth-app": "^6.0.1",
+    "@octokit/rest": "^20.0.2",
+    "probot": "^12.3.1",
+    "express": "^4.18.2",
+    "ws": "^8.14.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "node-fetch": "^3.3.2",
+    "helmet": "^7.1.0",
+    "rate-limiter-flexible": "^3.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "eslint": "^8.52.0",
+    "@types/node": "^20.8.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/protechtimenow/thought-chat-github-app.git"
+  }
+}
