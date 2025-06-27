@@ -1,0 +1,29 @@
+# GitHub App Manifest
+# This file defines the GitHub App configuration
+
+name: Thought Chat Interface
+description: Voice-enabled AI chat interface for developers - speak your thoughts, get AI responses
+url: https://github.com/protechtimenow/thought-chat-github-app
+author: protechtimenow
+
+# App permissions
+default_permissions:
+  issues: write
+  pull_requests: write
+  repository_projects: read
+  contents: read
+  metadata: read
+
+# Events the app subscribes to
+default_events:
+  - issues
+  - pull_request
+  - push
+  - repository
+  - installation
+
+# Where the app can be installed
+installation:
+  target_type: repository
+
+public: true
